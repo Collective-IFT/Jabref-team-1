@@ -648,11 +648,11 @@ public class LibraryTab extends Tab {
     }
 
     public void selectPreviousEntry() {
-        mainTable.getSelectionModel().clearAndSelect(mainTable.getSelectionModel().getSelectedIndex() - 1);
+        mainTable.getSelectionModel().clearAndSelect(0);
     }
 
     public void selectNextEntry() {
-        mainTable.getSelectionModel().clearAndSelect(mainTable.getSelectionModel().getSelectedIndex() + 1);
+        mainTable.getSelectionModel().clearAndSelect(mainTable.getItems().size()-1);
     }
 
     /**
