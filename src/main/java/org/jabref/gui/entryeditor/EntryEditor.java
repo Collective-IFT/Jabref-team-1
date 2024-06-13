@@ -246,6 +246,12 @@ public class EntryEditor extends BorderPane {
         libraryTab.selectNextEntry();
     }
 
+    private void navigateToLastEntry(){
+        if(!listView.getInItems().isEmpty()){
+
+        }
+    }
+
     private List<EntryEditorTab> createTabs() {
         entryEditorTabs.add(new PreviewTab(databaseContext, dialogService, preferencesService, stateManager, themeManager, libraryTab.getIndexingTaskManager(), taskExecutor));
 
