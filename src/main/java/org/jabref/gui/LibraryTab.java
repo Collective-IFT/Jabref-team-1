@@ -655,6 +655,14 @@ public class LibraryTab extends Tab {
         mainTable.getSelectionModel().clearAndSelect(mainTable.getSelectionModel().getSelectedIndex() + 1);
     }
 
+    public void selectFirstEntry(){
+        mainTable.getSelectionModel().clearAndSelect(0); // Should select the 0th (first) row
+    }
+
+    public void selectLastEntry(){
+        mainTable.getSelectionModel().clearAndSelect(mainTable.getItems().size() - 1);
+    }
+
     /**
      * This method is called from an EntryEditor when it should be closed. We relay to the selection listener, which takes care of the rest.
      */

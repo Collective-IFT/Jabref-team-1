@@ -246,6 +246,16 @@ public class EntryEditor extends BorderPane {
         libraryTab.selectNextEntry();
     }
 
+    @FXML
+    private void navigateToFirstEntry() {
+        libraryTab.selectFirstEntry();
+    }
+
+    @FXML
+    private void navigateToLastEntry(){
+        libraryTab.selectLastEntry();
+    }
+
     private List<EntryEditorTab> createTabs() {
         entryEditorTabs.add(new PreviewTab(databaseContext, dialogService, preferencesService, stateManager, themeManager, libraryTab.getIndexingTaskManager(), taskExecutor));
 
