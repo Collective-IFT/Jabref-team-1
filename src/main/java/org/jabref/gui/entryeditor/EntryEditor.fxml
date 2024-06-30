@@ -74,7 +74,7 @@
                 </tooltip>
             </Button>
             <Separator />
-            <Button styleClass="icon-buttonNoSpaceTop,narrow" onAction="#navigateToPreviousEntry">
+            <Button styleClass="icon-buttonNoSpaceTop,narrow" onAction="#navigateToFirstEntry">
                 <graphic>
                     <JabRefIconView glyph="FIRST_ENTRY" />
                 </graphic>
@@ -98,7 +98,7 @@
                     <Tooltip text="%Next entry" />
                 </tooltip>
             </Button>
-            <Button styleClass="icon-buttonNoSpaceTop,narrow" onAction="#navigateToNextEntry">
+            <Button styleClass="icon-buttonNoSpaceTop,narrow" onAction="#navigateToLastEntry">
                 <graphic>
                     <JabRefIconView glyph="LAST_ENTRY" />
                 </graphic>
