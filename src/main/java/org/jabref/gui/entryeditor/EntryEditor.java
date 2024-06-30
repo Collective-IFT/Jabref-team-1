@@ -246,6 +246,7 @@ public class EntryEditor extends BorderPane {
         libraryTab.selectNextEntry();
     }
 
+
     private List<EntryEditorTab> createTabs() {
         entryEditorTabs.add(new PreviewTab(databaseContext, dialogService, preferencesService, stateManager, themeManager, libraryTab.getIndexingTaskManager(), taskExecutor));
 
