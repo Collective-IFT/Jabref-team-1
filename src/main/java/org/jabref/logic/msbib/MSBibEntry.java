@@ -95,6 +95,8 @@ class MSBibEntry {
         return fields.get("Tag");
     }
 
+    public int getLengthInPages() { return pages.getEnd() - pages.getStart() + 1;}
+
     private String getXmlElementTextContent(String name, Element entry) {
         String value = null;
         NodeList nodeLst = entry.getElementsByTagNameNS("*", name);
@@ -187,6 +189,8 @@ class MSBibEntry {
         inventors = getSpecificAuthors("Inventor", authorsElem);
         counsels = getSpecificAuthors("Counsel", authorsElem);
     }
+
+
 
     private List<MsBibAuthor> getSpecificAuthors(String type, Element authors) {
         List<MsBibAuthor> result = null;

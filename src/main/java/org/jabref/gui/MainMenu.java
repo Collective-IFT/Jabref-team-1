@@ -265,6 +265,11 @@ public class MainMenu extends MenuBar {
         pushToApplicationCommand.registerReconfigurable(pushToApplicationMenuItem);
 
         tools.getItems().addAll(
+
+                factory.createMenuItem(StandardActions.CALCULATE_PAGE_TOTAL, new ParseLatexAction(stateManager)),
+
+                new SeparatorMenuItem(),
+
                 factory.createMenuItem(StandardActions.PARSE_LATEX, new ParseLatexAction(stateManager)),
                 factory.createMenuItem(StandardActions.NEW_SUB_LIBRARY_FROM_AUX, new NewSubLibraryAction(frame, stateManager, dialogService)),
 

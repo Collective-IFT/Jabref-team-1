@@ -45,6 +45,14 @@ public class PageNumbers {
         return result;
     }
 
+    public int getStart() {
+        return start;
+    }
+
+    public int getEnd() {
+        return end;
+    }
+
     public String toString(String separator) {
         if (freeform != null) {
             return freeform;
