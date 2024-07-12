@@ -654,6 +654,11 @@ public class LibraryTab extends Tab {
     public void selectNextEntry() {
         mainTable.getSelectionModel().clearAndSelect(mainTable.getSelectionModel().getSelectedIndex() + 1);
     }
+    public void selectLastEntry() {
+        mainTable.clearAndSelectLast();
+    }
+
+
 
     /**
      * This method is called from an EntryEditor when it should be closed. We relay to the selection listener, which takes care of the rest.

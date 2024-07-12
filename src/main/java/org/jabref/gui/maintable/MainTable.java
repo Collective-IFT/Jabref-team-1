@@ -332,7 +332,7 @@ public class MainTable extends TableView<BibEntryTableViewModel> {
         scrollTo(0);
     }
 
-    private void clearAndSelectLast() {
+    public void clearAndSelectLast() {
         getSelectionModel().clearSelection();
         getSelectionModel().selectLast();
         scrollTo(getItems().size() - 1);
