@@ -651,6 +651,15 @@ public class LibraryTab extends Tab {
         mainTable.getSelectionModel().clearAndSelect(mainTable.getSelectionModel().getSelectedIndex() - 1);
     }
 
+    public void selectFirstEntry() {
+        mainTable.clearAndSelectFirst();
+    }
+
+    public void selectLastEntry() {
+        mainTable.clearAndSelectLast();
+    }
+
+
     public void selectNextEntry() {
         mainTable.getSelectionModel().clearAndSelect(mainTable.getSelectionModel().getSelectedIndex() + 1);
     }

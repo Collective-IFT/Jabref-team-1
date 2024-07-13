@@ -242,6 +242,18 @@ public class EntryEditor extends BorderPane {
     }
 
     @FXML
+    private void navigateToFirstEntry() {
+        libraryTab.selectFirstEntry();
+    }
+
+
+    @FXML
+    private void navigateToLastEntry() {
+        libraryTab.selectLastEntry();
+    }
+
+
+    @FXML
     private void navigateToNextEntry() {
         libraryTab.selectNextEntry();
     }
